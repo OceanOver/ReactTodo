@@ -16,7 +16,7 @@ import { Dispatch, AnyAction } from 'redux';
 import { connect } from 'dva';
 import { history } from 'umi';
 import { localRemove, localGet } from '@/utils/store';
-import { uploadURL, preURL } from '@/utils/constants';
+import { uploadURL, staticURL } from '@/utils/constants';
 import logo from '@/assets/logo.svg';
 import headIcon from '@/assets/userIcon.png';
 import './index.less';
@@ -163,7 +163,7 @@ const TaskHeader: React.FC<TaskHeaderProps> = props => {
 
   let headIconPath = headIcon;
   if (userInfo.header) {
-    headIconPath = preURL + userInfo.header;
+    headIconPath = staticURL + userInfo.header;
   }
 
   const userToken = localGet('access_token');
@@ -221,7 +221,7 @@ const TaskHeader: React.FC<TaskHeaderProps> = props => {
           onChange={_uploadChange}
         >
           {imageUrl ? (
-            <img alt="" src={preURL + imageUrl} className="avatar" />
+            <img alt="" src={staticURL + imageUrl} className="avatar" />
           ) : (
             <div className="avatar-uploader-trigger">
               <PlusOutlined />
