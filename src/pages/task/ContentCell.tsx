@@ -15,7 +15,7 @@ import { connect } from 'dva';
 import { ConnectState } from '@/models/connect';
 import { TaskStateType, TaskType } from '@/models/task';
 import './style/ContentCell.less';
-import { completeIcon } from '@/assets/complete.svg';
+import completeIcon from '@/assets/complete.svg';
 
 interface ContentCellProps {
   dispatch: Dispatch<AnyAction>;

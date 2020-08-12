@@ -1,5 +1,4 @@
 import { defineConfig } from 'umi';
-import {Button} from 'antd'
 
 export default defineConfig({
   nodeModulesTransform: {

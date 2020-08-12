@@ -1,17 +1,21 @@
 # ReactTodo
 
-This is a Todo demo built with React &amp; TypeScript &amp; UmiJS.
+This is a Todo demo built with React &amp; TypeScript &amp; [UmiJS](https://umijs.org/).
 
 ## Getting Started
 
 Install dependencies,
 
-```bash
+```shell
 npm install
 ```
 
 Start the dev server,
 
-```bash
+```shell
 npm run start
 ```
+
+### backend
+
+[DjangoTodo](https://github.com/OceanOver/DjangoTodo)
