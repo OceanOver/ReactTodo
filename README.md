@@ -16,6 +16,6 @@ Start the dev server,
 npm run start
 ```
 
-### backend
+### Backend
 
 [DjangoTodo](https://github.com/OceanOver/DjangoTodo)
